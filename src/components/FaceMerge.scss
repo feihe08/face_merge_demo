@@ -1,0 +1,12 @@
+.face-merge-container{
+  display: flex;
+  justify-content: space-around;
+  .box{
+    width: 300px;
+    height: 500px;
+    border: 1px solid #dddddd;
+    img{
+      width: 100%;
+    }
+  }
+}

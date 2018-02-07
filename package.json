@@ -1,0 +1,36 @@
+{
+  "name": "react-starter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,scss}": [
+      "prettier --single-quote true --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  },
+  "devDependencies": {
+    "antd": "^3.2.0",
+    "axios": "^0.17.1",
+    "babel-plugin-import": "^1.6.3",
+    "md5": "^2.2.1",
+    "node-sass": "^4.7.2",
+    "qs": "^6.5.1",
+    "react-app-rewired": "^1.4.1",
+    "sass-loader": "^6.0.6"
+  }
+}
